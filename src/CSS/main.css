@@ -1,0 +1,101 @@
+main{
+    min-height: 70vh;
+    max-height: 80vh;
+    margin:0 auto;
+    width: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    margin:0 auto;
+    min-height: 70vh;
+    max-height: 80vh;
+    width: 80%;
+    position: relative;
+    gap:1rem;
+    padding:1rem;
+    background: linear-gradient(325deg,#03001E 0%,#7303C0 30%,#EC38BC 70%, #FDEFF9 100%);
+
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 2rem;
+    display: block;
+    margin:0.5rem 0 0 0;
+    text-align: center;
+}
+
+button.reset{
+    display: block;
+    color:#000000;
+    background: #ffffff;
+    padding:1rem;
+    border: none;
+    font-size: 1.5em;
+    border-radius: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor:pointer;
+    font-weight: 600;
+    margin:0 0 1rem 0;
+}
+
+button.reset:focus{
+    color:#ec38bc;
+    background: #262809;
+}
+
+.game{
+    min-width:250px;
+    max-width: 430px;
+    min-height: 200px;
+    max-height:430px;
+    display: flex;
+    flex-wrap:wrap;
+    gap:0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+    perspective: 500px;
+}
+.item{
+    position:relative;
+    max-width:100px;
+    max-height:100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    font-size: 3rem;
+    transform: rotateY(180deg);
+    transition: 0.25s;
+}
+
+.item::after{
+  content: "";
+  position: absolute;
+  inset:0;
+  /* ver carta atras */
+/*   opacity: 0.85; */
+  background: #404040;
+  transition: 0.25s;
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
+}
+
+.item.boxOpen{
+    transform: rotateY(0deg);
+    transition: 0.25s;
+}
+.boxOpen::after,.boxMatch::after{
+    transform: rotateY(180deg);
+    transition: 0.25s;
+}

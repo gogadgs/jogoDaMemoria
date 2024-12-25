@@ -1,0 +1,27 @@
+@media screen and (min-width: 425px) and (max-width:428px) {
+    .item {
+        width: 60px;
+    }
+}
+@media screen and (min-width: 760px)  and (max-width:788px){
+    .item {
+        width: 90px;
+    }
+}
+@media screen and (min-width: 789px)  and (max-width:1024px){
+    .item {
+        width: 100px;
+    }
+}
+@media screen and (min-width: 1440px)  and (max-width:2550px){
+    .item {
+        width: 200px;
+        height: 200px;
+    }
+}
+@media screen and (min-width: 2560px){
+    .item {
+        width: 300px;
+        height: 300px;
+    }
+}

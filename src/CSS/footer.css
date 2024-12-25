@@ -1,0 +1,18 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    max-height: 20vh;
+    margin:0 auto;
+    width: 100%;
+}
+
+footer p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:blueviolet;
+    font-size: 1.5rem;
+    text-align: center;
+    margin:0.5rem 0;
+}

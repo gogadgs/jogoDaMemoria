@@ -1,0 +1,22 @@
+@import url("./header.css");
+@import url("./reset.css");
+@import url("./footer.css");
+@import url("./main.css");
+@import url("./responsivo.css");
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-height: 100vh;
+    background: #fc1e8a;
+    min-width: 100%;
+    margin:0 auto;
+    user-select: none;
+}
+
+
+
